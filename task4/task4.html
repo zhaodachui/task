@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/task4.css">
+    <title>task4</title>
+    <style>
+        html,body,div,p,ul{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 30px;
+            color: white;
+            background-color: #29bde0;
+        }
+        header{
+            height: 100px;
+        }
+        header img:nth-child(2){
+            float: left;
+            width: 50px;
+            margin-top: 35px;
+            margin-left: -98%;
+        }
+        header img:last-child{
+            float:left;
+            width: 50px;
+            margin-top: 35px;
+            margin-left: -70px;
+        }
+        .col-center{
+            width: 100%;
+            float: left;
+        }
+        .col-center div{
+            margin: 40px 60px 0px;
+            text-align: center;
+            font-size: 1em;
+        }
+        .split{
+            height: 1px;
+            background-color: #74d4eb;
+        }
+        .content{
+            width: 100%;
+            padding-bottom: 20px;
+        }
+        .content div:first-child{
+            margin:30px auto 0px;
+            width: 350px;
+        }
+        .congratulation{
+            width: 75%;
+            margin: 20px auto 0px;
+            color:#ffc865;
+        }
+        .info{
+            font-size:20px;
+            color:white;
+            margin-top: 60px;
+        }
+        .info p{
+            font-size:20px;
+            color:white;
+        }
+        .player{
+            width: 75%;
+            margin: 20px auto 0px;
+        }
+        .player li{
+            float: left;
+            width: 30%;
+            white-space: pre;
+            display: block;
+        }
+        .clearfix:after{
+            content: "020";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .center{
+            margin: 0 auto;
+            width:75%;
+        }
+        .row-height{
+            margin-top:0.3em;
+        }
+        footer{
+            width:100%;
+            background-color: white;
+            color:#a6a6a6;
+        }
+        .clientlog-list{
+            list-style: none;
+        }
+        .day{
+            float:left;
+            color:#515151;
+            margin-top: 10px;
+        }
+        .cost{
+            float:right;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-right: 10px;
+        }
+        .night{
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .clearfloat{
+            clear:both;
+        }
+        .clientLog{
+            width:100%;
+        }
+        .clientLog-split{
+            height: 1px;
+            background-color: #dddddd;
+        }
+        .btn-group{
+            position: fixed;
+            bottom: 0px;
+            height:60px;
+            width: 100%;
+            background-color: #77bece;
+            filter:alpha(opacity=50);
+            -moz-opacity:0.5;
+            -khtml-opacity: 0.5;
+            opacity: 0.5;
+        }
+        .again{
+            background: #f66f6f;
+            float: left;
+            margin: 10px 15px;
+            border-radius: 10px;
+        }
+        .again p{
+            padding: 0.1em 0.2em;
+        }
+        .upload{
+            background: #fbb435;
+            float: right;
+            margin:10px 15px;
+            border-radius: 10px;
+        }
+        .upload p{
+            padding: 0.1em 0.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="col-center">
+                <div>游戏结果</div>
+            </div>
+            <img src="images/main.png"/>
+            <img src="images/info.png"/>
+        </header>
+        <div class="split"></div>
+        <div class="content">
+            <div>
+                <img src="images/success.png">
+            </div>
+            <p class="congratulation">太棒了!你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！</p>
+            <div class="info">
+                <p id="time" class="center">本次游戏共计用时0小时25分钟</p>
+                <ul class="player clearfix">
+                    <li>杀  手0人</li>
+                    <li>警  察1人</li>
+                    <li>平  民6人</li>
+                    <li>狙击手0人</li>
+                    <li>医  生1人</li>
+                </ul>
+                <div class="center row-height">卧底词汇：爱新觉罗</div>
+                <div class="center row-height">水民词汇：努尔哈赤</div>
+            </div>
+        </div>
+        <footer>
+            <ul class="clientlog-list center">
+                <li class="clientLog">
+                    <div class="day">第一天</div>
+                    <div class="cost">0小时57分</div>
+                    <div class="clearfloat"></div>
+                    <p class="night">晚上：5号被杀手杀死，  5号是水民</p>
+                    <p class="night">白天：8号被全民投票投死，8号是杀手</p>
+                </li>
+            </ul>
+        </footer>
+        <div class="center btn-group">
+            <div id="again" class="again"><p>再来一局</p></div>
+            <div id="upload" class="upload"><p>上传并分享</p></div>
+        </div>
+    </div>
+</body>
+</html>

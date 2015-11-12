@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>投票页</title>
+    <style>
+        body{
+            margin:0px;
+            color:white;
+            font-size: 30px;
+        }
+        .title{
+            /*position: fixed;*/
+            min-width: 300px;
+            height:90px;
+            width: 100%;
+            background-color: #22292c;
+        }
+        .col-left{
+            margin-left:-100%;
+            margin-top:20px;
+            width:100px;
+            float:left;
+        }
+        .col-center{
+            width: 100%;
+            float: left;
+            text-align: center;
+            margin-top:20px;
+        }
+        .title-content{
+            margin-left: 110px;
+            margin-right:110px;
+        }
+        .col-right{
+            margin-left:-50px;
+            width:50px;
+            margin-top:20px;
+            float: left;
+            font-weight: bold;
+        }
+        .content{
+            width: 100%;
+            background-color: #68cdd5;
+            padding-top:20px ;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-back{
+            margin-left: 35px;
+            /*margin-top:20px;*/
+        }
+        .img-logo{
+            margin: 40px auto 0px auto;
+            width:180px;
+        }
+        .text-des{
+            margin: 120px auto 0px auto;
+            width:450px;
+        }
+        p{
+            line-height: 1.5em;
+        }
+        .btn-left{
+            /*position: absolute;*/
+            /*left:140px;*/
+            /*bottom:250px;*/
+            float: left;
+        }
+        .btn-right{
+            /*position: absolute;*/
+            /*right:140px;*/
+            /*bottom:250px;*/
+            float: right;
+        }
+        .btn-group{
+            margin:220px auto 250px auto;
+            width: 300px;
+        }
+        .clearfix:after{
+            content: "020";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        /*.grid-s5m0e5 { width:100%; margin-right:auto; margin-left:auto; }*/
+        /*.grid-s5m0e5 .col-main { float:left; width:100%; min-height:30px; background:#000; }*/
+        /*.grid-s5m0e5 .col-main .main-wrap {*/
+            /*margin-left:200px;  /!*与col-sub产生10像素距离*!/*/
+            /*margin-right:200px; /!*与col-extra产生10像素距离*!/*/
+            /*background:#0f0;*/
+            /*min-height:30px;*/
+        /*}*/
+        /*.col-sub { float:left; width:190px; min-height:30px; background:#f00; margin-left:-100%; }*/
+        /*.col-extra { float:left; width:190px; min-height:30px; background:#00f; margin-left:-190px; }*/
+    </style>
+</head>
+<body>
+    <div class="title clearfix">
+        <div class="col-center">
+            <div class="title-content">魔镜</div>
+        </div>
+        <div class="col-left"><img src="images/title_03.png"></div>
+        <div class="col-right"><img src="images/title_06.png"></div>
+    </div>
+    <div class="content">
+        <div class="btn-back">
+            <img src="images/index_03.png">
+        </div>
+        <div class="img-logo">
+        </div>
+        <div class="text-des">
+            <p>
+                葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以及线下聚会桌游道具。
+            </p>
+        </div>
+        <div class="btn-group clearfix">
+            <div class="btn-left">
+                <img src="images/index_11.png">
+            </div>
+            <div class="btn-right">
+                <img src="images/index_14.png">
+            </div>
+        </div>
+    </div>
+    <!--<div class="grid-s5m0e5">-->
+        <!--<div class="col-main">-->
+            <!--<div class="main-wrap">-->
+                <!--我是主列，出来吧！-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-sub">我是子列</div>-->
+        <!--<div class="col-extra">我是附加列</div>-->
+    </div>
+</body>
+</html>
